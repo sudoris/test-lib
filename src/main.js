@@ -1,5 +1,5 @@
 // Plugin export
-import Vue from 'vue'
+// import Vue from 'vue'
 import FormLoader from './components/FormLoader.vue'
 
 const Fractal = {
