@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
+		module.exports = factory(require("vue"));
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["Fractal"] = factory();
+		exports["Fractal"] = factory(require("vue"));
 	else
-		root["Fractal"] = factory();
-})((typeof self !== 'undefined' ? self : this), function() {
+		root["Fractal"] = factory(root["Vue"]);
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -181,6 +181,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "8bbf":
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__8bbf__;
+
+/***/ }),
+
 /***/ "fb15":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -212,19 +219,25 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"73f6efd6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormLoader.vue?vue&type=template&id=0c124155&
+// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
+var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"73f6efd6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormLoader.vue?vue&type=template&id=5ba5feca&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h1',[_vm._v("THIS IS FRACTAL")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormLoader.vue?vue&type=template&id=0c124155&
+// CONCATENATED MODULE: ./src/components/FormLoader.vue?vue&type=template&id=5ba5feca&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormLoader.vue?vue&type=script&lang=js&
 //
 //
 //
 //
-/* harmony default export */ var FormLoadervue_type_script_lang_js_ = ({});
+/* harmony default export */ var FormLoadervue_type_script_lang_js_ = ({
+  name: "FormLoader"
+});
 // CONCATENATED MODULE: ./src/components/FormLoader.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_FormLoadervue_type_script_lang_js_ = (FormLoadervue_type_script_lang_js_); 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
@@ -349,12 +362,13 @@ var component = normalizeComponent(
 /* harmony default export */ var FormLoader = (component.exports);
 // CONCATENATED MODULE: ./src/main.js
 // Plugin export
+// import Vue from 'vue'
+
 
 var Fractal = {
-  install: function install(Vue) {
-    Vue.component('FormLoader', FormLoader);
-  }
+  FormLoader: FormLoader
 };
+external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('FormLoader', FormLoader);
 /* harmony default export */ var main = (Fractal);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
