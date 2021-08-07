@@ -1,8 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
+// Plugin export
+import FormLoader from './components/FormLoader.vue'
 
-Vue.config.productionTip = false
+const Fractal = {
+  install(Vue) {
+    Vue.component('FormLoader', FormLoader)    
+  }  
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export default Fractal
